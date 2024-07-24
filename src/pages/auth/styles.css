@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.login-page p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-page .welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #023047;
+  margin-bottom: 20px;
+}
+
+.login-with-google-btn {
+  background-color: #4285f4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-with-google-btn:hover {
+  background-color: #357ae8;
+}
+
+.login-with-google-btn:focus {
+  outline: none;
+}

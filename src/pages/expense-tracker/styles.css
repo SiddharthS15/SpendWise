@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --primary-color: #4e9f3d; /* Cool Green */
+  --secondary-color: #2c3e50; /* Dark Blue */
+  --highlight-color: #f39c12; /* Warm Yellow */
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+
+.balance {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.balance h2 {
+  font-size: 36px;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: var(--primary-color);
+}
+
+.money.minus {
+  color: var(--highlight-color);
+}
+
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.transaction-type {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.transaction-type label {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.transaction-type input[type='radio'] {
+  display: none;
+}
+
+.transaction-type label.selected {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: none;
+}
+
+.transaction-type label:hover {
+  background-color: var(--highlight-color);
+  color: #fff;
+}
+
+
+.btn {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+
+.transactions {
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  overflow: auto;
+  border: 3px solid var(--secondary-color);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.transactions h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.transactions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.transactions li.plus {
+  border-left: 5px solid var(--primary-color);
+}
+
+.transactions li.minus {
+  border-left: 5px solid var(--highlight-color);
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sign-out-button {
+  border: none;
+  margin-top: 20px;
+  width: 150px;
+  background: var(--highlight-color);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-out-button:hover {
+  background: #e67e22;
+}
