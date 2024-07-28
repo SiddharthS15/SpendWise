@@ -1,4 +1,5 @@
 # Finance Flow: Personal Expense Tracker
+## Internship Project: Unified Mentor
 
 Finance Flow is a user-friendly personal expense tracking application built with React. It helps users manage and monitor their financial activities effortlessly. The app integrates with Google for authentication and uses Firebase for real-time data storage and synchronization, providing a seamless experience for tracking personal finances.
 
