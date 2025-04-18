@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SpendWise/static/css/main.d6d88d86.css",
+    "main.js": "/SpendWise/static/js/main.58c9da86.js",
+    "index.html": "/SpendWise/index.html",
+    "main.d6d88d86.css.map": "/SpendWise/static/css/main.d6d88d86.css.map",
+    "main.58c9da86.js.map": "/SpendWise/static/js/main.58c9da86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6d88d86.css",
+    "static/js/main.58c9da86.js"
+  ]
+}
