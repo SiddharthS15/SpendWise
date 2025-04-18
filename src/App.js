@@ -6,7 +6,7 @@ import { ExpenseTracker } from "./pages/expense-tracker/index";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/SpendWise">
         <Routes>
           <Route path="/" exact element={<Auth />} />
           <Route path="/expense-tracker" element={<ExpenseTracker />} />
